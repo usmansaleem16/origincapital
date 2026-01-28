@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | Origin Resource Capital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --forest-900: #1a2e1a;
+            --forest-800: #243524;
+            --forest-700: #2d4a2d;
+            --forest-600: #3d5c3d;
+            --forest-500: #4a7c4a;
+            --cream-100: #FDFBF7;
+            --cream-200: #F7F3EB;
+            --cream-300: #EDE7DB;
+            --cream-400: #D4CCC0;
+            --text-dark: #1a2e1a;
+            --text-muted: #5c6d5c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--cream-100);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1.25rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(253,251,247,0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 2px 40px rgba(26,46,26,0.08);
+        }
+
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            color: var(--forest-800);
+            text-decoration: none;
+        }
+
+        .logo span {
+            display: none;
+        }
+
+        .nav-cta {
+            background: var(--forest-800);
+            border: none;
+            color: var(--cream-100);
+            padding: 0.7rem 1.5rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .nav-cta:hover {
+            background: var(--forest-700);
+        }
+
+        /* Content */
+        .legal-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 8rem 2rem 5rem;
+        }
+
+        .legal-content h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 400;
+            color: var(--forest-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-content .last-updated {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--cream-400);
+        }
+
+        .legal-content h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--forest-800);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .legal-content p {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+        }
+
+        .legal-content ul {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+        }
+
+        .legal-content li {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-content a {
+            color: var(--forest-600);
+            text-decoration: none;
+        }
+
+        .legal-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            padding: 2rem 1.5rem;
+            background: #131f13;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .footer-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            color: var(--cream-300);
+            margin-bottom: 1.25rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--cream-400);
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.3s ease;
+            opacity: 0.7;
+        }
+
+        .footer-links a:hover {
+            color: var(--cream-200);
+            opacity: 1;
+        }
+
+        .footer-copy {
+            font-size: 0.75rem;
+            color: var(--cream-400);
+            opacity: 0.5;
+        }
+
+        @media (min-width: 768px) {
+            nav {
+                padding: 1.5rem 3rem;
+            }
+
+            .logo {
+                font-size: 1.4rem;
+            }
+
+            .logo span {
+                display: inline;
+                color: var(--forest-600);
+                font-weight: 300;
+            }
+
+            .legal-content {
+                padding: 10rem 3rem 6rem;
+            }
+
+            footer {
+                padding: 2.5rem 3rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-align: left;
+            }
+
+            .footer-logo {
+                margin-bottom: 0;
+            }
+
+            .footer-links {
+                margin-bottom: 0;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            nav {
+                padding: 1.5rem 4rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .legal-content {
+                padding: 10rem 2rem 6rem;
+            }
+
+            footer {
+                padding: 3rem 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="logo">ORIGIN <span>RESOURCE CAPITAL</span></a>
+        <a href="mailto:info@originresourcecapital.com" class="nav-cta">Inquire</a>
+    </nav>
+
+    <!-- Content -->
+    <div class="legal-content">
+        <h1>Terms of Service</h1>
+        <p class="last-updated">Last updated: January 2026</p>
+
+        <p>Welcome to the Origin Resource Capital website. By accessing or using this website, you agree to be bound by these Terms of Service. Please read them carefully before using our website or services.</p>
+
+        <h2>Acceptance of Terms</h2>
+        <p>By accessing this website, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use this website.</p>
+
+        <h2>Description of Services</h2>
+        <p>Origin Resource Capital provides information about our investment activities and services through this website. The content on this website is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities or investment products.</p>
+
+        <h2>No Investment Advice</h2>
+        <p>The information provided on this website does not constitute investment advice, financial advice, trading advice, or any other sort of advice. You should not treat any of the website's content as such. Origin Resource Capital does not recommend that any securities, investments, or strategies are suitable for any particular person.</p>
+        <p>Before making any investment decisions, you should consult with your own financial, legal, and tax advisors to determine the suitability of any investment.</p>
+
+        <h2>No Offer or Solicitation</h2>
+        <p>Nothing on this website shall be construed as an offer to sell, or a solicitation of an offer to buy, any securities or other financial instruments. Any such offer or solicitation will be made only by means of a confidential offering memorandum or other appropriate documentation and only to qualified investors in jurisdictions where such offer or solicitation is permitted by law.</p>
+
+        <h2>Forward-Looking Statements</h2>
+        <p>This website may contain forward-looking statements regarding future events, business prospects, or financial performance. These statements are based on current expectations and are subject to risks and uncertainties that could cause actual results to differ materially. We undertake no obligation to update any forward-looking statements.</p>
+
+        <h2>Intellectual Property</h2>
+        <p>All content on this website, including text, graphics, logos, images, and software, is the property of Origin Resource Capital or its content suppliers and is protected by international copyright laws. You may not reproduce, distribute, modify, or create derivative works from any content without our prior written consent.</p>
+
+        <h2>Use of Website</h2>
+        <p>You agree to use this website only for lawful purposes and in a manner that does not infringe upon the rights of others or restrict their use of the website. Prohibited activities include:</p>
+        <ul>
+            <li>Attempting to gain unauthorized access to any portion of the website</li>
+            <li>Using the website to transmit harmful, offensive, or illegal content</li>
+            <li>Interfering with the proper functioning of the website</li>
+            <li>Collecting personal information about other users without their consent</li>
+        </ul>
+
+        <h2>Disclaimer of Warranties</h2>
+        <p>This website is provided "as is" and "as available" without any warranties of any kind, either express or implied. Origin Resource Capital does not warrant that the website will be uninterrupted, error-free, or free of viruses or other harmful components. We make no warranties regarding the accuracy, reliability, or completeness of any information on this website.</p>
+
+        <h2>Limitation of Liability</h2>
+        <p>To the fullest extent permitted by law, Origin Resource Capital shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising out of or relating to your use of this website, including but not limited to damages for loss of profits, data, or other intangible losses.</p>
+
+        <h2>Indemnification</h2>
+        <p>You agree to indemnify, defend, and hold harmless Origin Resource Capital and its officers, directors, employees, agents, and affiliates from and against any claims, liabilities, damages, losses, and expenses arising out of or in any way connected with your access to or use of this website.</p>
+
+        <h2>Third-Party Links</h2>
+        <p>This website may contain links to third-party websites. These links are provided for your convenience only and do not imply any endorsement or responsibility for the content of such websites. We have no control over third-party websites and are not responsible for their content or practices.</p>
+
+        <h2>Governing Law</h2>
+        <p>These Terms of Service shall be governed by and construed in accordance with applicable laws, without regard to conflict of law principles. Any disputes arising from these terms or your use of this website shall be resolved through binding arbitration or in the appropriate courts.</p>
+
+        <h2>Changes to Terms</h2>
+        <p>We reserve the right to modify these Terms of Service at any time. Changes will be effective immediately upon posting to this website. Your continued use of the website after any changes constitutes your acceptance of the new terms.</p>
+
+        <h2>Severability</h2>
+        <p>If any provision of these Terms of Service is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions about these Terms of Service, please contact us at:</p>
+        <p><a href="mailto:info@originresourcecapital.com">info@originresourcecapital.com</a></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">ORIGIN</div>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <div class="footer-copy">© 2026 Origin Resource Capital. All rights reserved.</div>
+    </footer>
+</body>
+</html>
